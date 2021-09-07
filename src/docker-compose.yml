@@ -34,17 +34,18 @@ services:
       - laravel
 
   database:
+    platform: linux/x86_64
     image: mysql:5.7.32
     container_name: database
     ports:
       - 3306:3306
     volumes:
-      - ~/mysql/hub4:/var/lib/mysql
+      - ~/mysql/laravel:/var/lib/mysql
     environment:
-      MYSQL_DATABASE: hub4
-      MYSQL_USER: cardinaladmin
-      MYSQL_PASSWORD: 97OxFs3wj7aD
-      MYSQL_ROOT_PASSWORD: 97OxFs3wj7aD
+      MYSQL_DATABASE: laravel
+      MYSQL_USER: laravel
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: password
     networks:
       - laravel
 

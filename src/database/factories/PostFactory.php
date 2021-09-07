@@ -24,7 +24,7 @@ class PostFactory extends Factory
         return [
             'title' => $this->faker->sentence(7),
             'slug' => $this->faker->unique()->slug(),
-            'featured_image' => 'https://hub4.dev/storage/thumbnails/post' . rand(1, 10) . '.jpeg',
+            'featured_image' => 'https://laravelposts.dev/storage/thumbnails/post' . rand(1, 10) . '.jpeg',
             'excerpt' => $this->faker->paragraph(2),
             'body' => '<p>' . implode('</p><p>', $this->faker->paragraphs(6)) . '</p>',
             'category_id' => rand(1, 5),

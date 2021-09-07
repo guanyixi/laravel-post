@@ -26,7 +26,7 @@ class UserFactory extends Factory
             'name' => $this->faker->unique()->slug(2),
             'first_name' => $this->faker->firstName(),
             'last_name' => $this->faker->lastName(),
-            'avatar' => 'https://hub4.dev/storage/thumbnails/user' . rand(1, 10) . '.jpeg',
+            'avatar' => 'https://laravelposts.dev/storage/thumbnails/user' . rand(1, 10) . '.jpeg',
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
         ];
     }
