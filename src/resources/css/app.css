@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+
+body{
+    @apply font-secondary;
+}
+a{
+    @apply text-accent-500;
+    transition:all 0.2s ease;
+}
+a:hover{
+    @apply text-primary-500;
+}
+h1{
+    font-size:32px; 
+    line-height: 1.2;
+    @apply font-extrabold text-primary-500 mb-4;
+}
+h2{
+    font-size:18px; 
+    line-height: 1.4;
+    @apply font-extrabold text-primary-500 mb-4;
+}
+p{
+    @apply mb-5 text-base;
+}
+button{
+    @apply text-sm font-primary text-gray-600 transition duration-150 ease-in-out font-medium;
+}
+button:focus{
+    @apply outline-none text-gray-800;
+}
+
+
+@tailwind utilities;
